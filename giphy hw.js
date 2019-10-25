@@ -1,15 +1,21 @@
 
-
 var carMake = ["nissan", "ford", "Toyota"] 
 
-for (var i = 0; i < carMake.length; i++ ) {
 
-$("#buttonsdiv").append('<button type="button">' + carMake[i] + '</button>') 
+function makeButtons(carMake) {
+  $("#buttonsdiv").empty()
+  for (var i = 0; i < carMake.length; i++ ) {
 
+    $("#buttonsdiv").append('<button type="button">' + carMake[i] + '</button>') 
+    
+    }
+  
 }
 
+makeButtons();
 
 $("#trial").on("click", function()  {
+event.preventDefault();
 
 var type = $(this).attr("data-type");
 
@@ -23,6 +29,21 @@ var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=BkaUZ
     });
 
 })
+
+$("#addcar").on("click", function(event) {
+event.preventDefault();
+
+
+var newCar = $("#carSearch").val().trim();
+carMake.push(newCar); 
+
+makeButtons()
+
+})
+
+
+
+
 
 
 
