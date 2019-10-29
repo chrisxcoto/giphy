@@ -2,10 +2,10 @@
 var carMake = ["nissan", "ford", "Toyota"] 
 
 
-function makeButtons(carMake) {
+function makeButtons() {
   $("#buttonsdiv").empty()
   for (var i = 0; i < carMake.length; i++ ) {
-
+    console.log("car")
     $("#buttonsdiv").append('<button type="button">' + carMake[i] + '</button>') 
     
     }
@@ -40,6 +40,11 @@ carMake.push(newCar);
 makeButtons()
 
 })
+
+
+var chris = false
+
+
 
 
 
