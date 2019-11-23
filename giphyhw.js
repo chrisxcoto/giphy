@@ -6,11 +6,17 @@ function makeButtons() {
   $("#buttonsdiv").empty()
   for (var i = 0; i < carMake.length; i++) {
     console.log("car")
-    $("#buttonsdiv").append(`<button class="NewBtn" data-type=${carMake[i]} type="button"> ${carMake[i]} </button>`)
+    $("#buttonsdiv").append(`<button class="mx-1 btn btn-dark NewBtn" data-type=${carMake[i]} type="button"> ${carMake[i]} </button>`)
 
   }
-
 }
+
+function clearButtons() {
+  $("#clear").on("click", function () {
+    $("#gifs").empty();
+
+  })
+};
 
 makeButtons();
 
@@ -53,21 +59,21 @@ $(document).on("click", ".gif", function () {
   event.preventDefault();
 
 
-var state= $(this).attr("data-state");
+  var state = $(this).attr("data-state");
 
-if(state === "still") {
-$(this).attr("src", $(this).attr("data-animated"))
-$(this).attr("data-state", "animated")
+  if (state === "still") {
+    $(this).attr("src", $(this).attr("data-animated"))
+    $(this).attr("data-state", "animated")
 
 
-}
+  }
 
-else {
-  $(this).attr("src", $(this).attr("data-still"))
-  $(this).attr("data-state", "still")
-  
+  else {
+    $(this).attr("src", $(this).attr("data-still"))
+    $(this).attr("data-state", "still")
 
-}
+
+  }
 
   //find it still or animated
   //if still change to animated, else animated change to still 

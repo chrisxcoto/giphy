@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Title</title>
@@ -13,30 +13,54 @@
 
 <body>
 
-    <div class="container">
-        <form id="carform" class="inline">
-            <div class="col-md-4">
-                <input id="carSearch" class="form-control" type="text" placeholder="Search">
-            </div>
-            <button id="addcar" type="submit" class="btn btn-danger">Search</button>
-
-        </form>
-
-        <button class="NewBtn" data-type="nissan">
-
-            NISSAN
-
-        </button>
-
-        <div id="buttonsdiv"> </div>
-        <div id="gifs"> </div>
-
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-8">CHRIS GIF</h1>
+            <p class="lead">See the world of cars</p>
+        </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="./giphyhw.js"></script>
+    <body style="background-color:rgb(39, 81, 145);">
 
-</body>
+        <div class="container justify-content-center">
+            <div class="row">
+                <div class="col-md-12 mb-3 d-flex justify-content-center">
+                    <form id="carform" class="form-inline">
+
+                        <input id="carSearch" class="form-control" type="text" alight:center
+                            class="d-flex justify-content-center" placeholder="Search">
+
+                        <button id="addcar" type="submit" class="btn btn-danger">Search</button>
+
+                        <button id="clear" type="clear" class="btn btn-success">Clear</button>
+
+                    </form>
+                </div>
+            </div>
+
+            <!--<input type="text" align="left">-->
+
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div id="buttonsdiv">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div id="gifs"> </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <!--<input align="center" type="text" name="search" /> -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="./giphyhw.js"></script>
+
+    </body>
 
 </html>
